@@ -1,0 +1,12 @@
+version: 2
+updates:
+  # Allow updates for npm dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    # Choose the update strategy: "widen" or "lockfile-only"
+    # For version ranges like "^1.2.3", "widen" will update to the latest compatible version
+    # "lockfile-only" will only use versions already specified in the lockfile
+    # Choose the appropriate strategy based on your project's needs
+    update: "widen"
