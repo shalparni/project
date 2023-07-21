@@ -11,3 +11,5 @@ updates:
     # Choose the appropriate strategy based on your project's needs
     open-pull-requests-limit: 10
     version: "widen"
+- name: Dependency Review
+  uses: actions/dependency-review-action@v3.0.6
